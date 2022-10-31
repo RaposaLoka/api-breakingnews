@@ -1,4 +1,4 @@
-const User = require("../models/User");
+import User from "../models/User.js";
 
 // User é o meu Schema
 // .create é um método do mongoose que cria um novo item dentro desse Schema nesse padrão
@@ -22,7 +22,7 @@ const updateService = (
     { name, username, email, password, avatar, background }
   );
 
-module.exports = {
+export default {
   createService,
   findAllService,
   findByIdService,
